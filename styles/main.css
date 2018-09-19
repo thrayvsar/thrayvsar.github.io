@@ -136,10 +136,12 @@ a:hover {
         position: static;
     }
     .orange {
-        width: 35%;
-        padding-top: 35%;
-        margin-left: 65%;
-        margin-top: 5%
+        width: 20%;
+        padding-top: 20%;
+        margin-left: 75%;
+        margin-right: 0px;
+        margin-top: 0px;
+        z-index: 1;
     }
     .half{
         width: 100%
