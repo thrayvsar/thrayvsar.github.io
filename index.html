@@ -1,10 +1,76 @@
 <html>
     <head>
+        <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-    <h2>Test testing</h2>
-        <p>A test or examination (informally, exam or evaluation) is an assessment intended to measure a test-taker's knowledge, skill, aptitude, physical fitness, or classification in many other topics (e.g., beliefs).[1] A test may be administered verbally, on paper, on a computer, or in a predetermined area that requires a test taker to demonstrate or perform a set of skills. Tests vary in style, rigor and requirements. For example, in a closed book test, a test taker is usually required to rely upon memory to respond to specific items whereas in an open book test, a test taker may use one or more supplementary tools such as a reference book or calculator when responding. A test may be administered formally or informally. An example of an informal test would be a reading test administered by a parent to a child. A formal test might be a final examination administered by a teacher in a classroom or an I.Q. test administered by a psychologist in a clinic. Formal testing often results in a grade or a test score.[2] A test score may be interpreted with regards to a norm or criterion, or occasionally both. The norm may be established independently, or by statistical analysis of a large number of participants. An exam is meant to test a child's knowledge or willingness to give time to manipulate that subject. </p>
-        <a href="https://en.wikipedia.org/wiki/Test">https://en.wikipedia.org/wiki/Test</a>
-    </body>
+    <body> 
+        <div class="wrapper">
+            
+            <div class="text">
+                <h1>T.P.James.</h1>
+                <h3>Graphic Design<br>
+                Wellington, New Zealand <br>
+                <br>
+                (+64) 27 814 0736<br> 
+                <a class="anchor" href="mailto:timmyjames@gmail.com?Subject=Hello">timmyjames@gmail.com</a><br>
+                <br> 
+                <a class="anchor" href="https://www.instagram.com/t.p.james/" target="_blank">Instagram</a><br>
+                <a class="anchor" href="http://www.twitter.com/tpjames_"target="_blank">Twitter</a><br><br>    
+                2015—2018<br> 
+                Massey University<br>
+                Bachelor of Design (hons)<br>       Visual Communication
+                </h3>
+                <div class="orange"></div>
+                
+            </div>
+            
+            <div class="work"> 
+                <h2>Selected <span>W</span>ork.</h2>
+                <h3>Bazooka – a noisy word with Dutch roots.</h3>
+                <img src="TJames01-0-2344-0-1652.jpg">
+                <br><br>
+                <img src="TJames02-0-2344-0-1652.jpg">
+                <br><br>
+                <img class="half" src="TJames10-0-2344-0-1652.jpg">
+                <br><br><br>
+                <h3>All fonts look the same.</h3>
+                <img src="a.gif" alt="a">
+                <br><br><br><h3>Typology.</h3>
+                <img src="Intro.jpg" alt="Typology Cover">
+                <br><br><br><h3>Tesla.</h3>
+                <img src="Comp-1.gif" alt="Tesla Ad">
+                <br><br><br><h3>Overload.</h3>
+                <img src="poster.jpg" alt="Overload Poster">
+                <br><br>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div id="clockbox" style="font:12px Helvetica; color:#000; font-weight: 600;"></div>
+                <script type="text/javascript">
+                    var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                    var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+                    function GetClock(){
+                        var d=new Date();
+                        var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
+                        var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+                        if(nhour==0){ap=" AM";nhour=12;}
+                        else if(nhour<12){ap=" AM";}
+                        else if(nhour==12){ap=" PM";}
+                        else if(nhour>12){ap=" PM";nhour-=12;}
+
+                        if(nmin<=9) nmin="0"+nmin;
+
+                        var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+" "+nhour+":"+nmin+ap+"";
+                        document.getElementById('clockbox').innerHTML=clocktext;
     
-    </html>
+                    }
+
+                    GetClock();
+                    setInterval(GetClock,1000);
+                </script>
+        </div>
+        
+    </body>
+</html>
